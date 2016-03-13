@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1> Test</h1>
+    <h1>Taco Game</h1>
+    <h3>By Ivan Limongan</h3>
 
     <script type="text/javascript">
-      var sampleNumber = 3;
-      var guessIsCorrect = false;
 
-      console.log("Ask the user for a number.");
+      console.log("Ask user if they like tacos or not.");
+      var tacoGuess = prompt ("Do you like tacos?");
+        if (tacoGuess === "yes") {
+          alert("Cool, I like tacos also");
+        }
+        else {
+          alert("That's too bad, tacos are good for you.");
+        }
 
-      var guess = parseInt(prompt ("Pick a number between 1 and 10"));
-      if (sampleNumber == guess) {
-        guessIsCorrect = true;
-      }
-      console.log("Compare the guess number to ours.");
-      var username = prompt ("What's your name?");
-      var message = "Hello " +username+ ". You picked " +guess+ ".";
+      console.log ("Ask user if they want carnitas or not in their taco.");
+      var meatGuess = prompt ("Let's say you do like tacos, would you like carnitas as your meat of choice?");
+        if (meatGuess === "yes") {
+          alert("Cool, carnitas is the way to go!");
+        }
+        else {
+          alert("That's too bad, carnitas is good for your health!")
+        }
 
-      // if (guessIsCorrect) {
-      //   message += " You guess the number!";
-      // }
-      // else {
-      //   message += " You did NOT guess the number!";
-      // }
-      console.log("Build a message to show the user.");
-      message += guessIsCorrect ? "You guess the number" : "You did NOT guess the number!"
-      alert(message);
+        console.log ("The final question for the user.");
+        var avocadoGuess = prompt("Do you like avocado on your taco or not?");
+          if (avocadoGuess === "yes") {
+            alert("Cool, you're my kind of person, let's hang out and get some tacos with avocados!")
+          }
+          else {
+            alert("That's ok, let's hang out and get some tacos and beer anyways!")
+          }
+
+
+        document.write("Thanks for playing this simple taco game, let's get some tacos");
+
     </script>
 
 
