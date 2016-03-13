@@ -34,8 +34,17 @@
           alert("That's ok, let's hang out and get some tacos and beer anyways!")
         }
 
-        var finalMessage = "<h4>Your answers are <u>" +tacoGuess+ "</u> for tacos, <u>" +meatGuess+ "</u> for the carnitas and <u>" +avocadoGuess+ "</u> for the avocado!</h4>";
-        document.write( finalMessage+ " Thanks for playing this simple taco game, let's get some tacos!");
+      console.log ("Asking user for their name. Final Question")
+      var guessName = prompt("Final question, what's your name?");
+        if (guessName) {
+          alert("Cool, nice to meet you!")
+        }
+        else{
+          alert("Are you a robot?")
+        }
+
+      var finalMessage = "<h4>Hello " +guessName+ ", your answers are <u>" +tacoGuess+ "</u> for tacos, <u>" +meatGuess+ "</u> for the carnitas and <u>" +avocadoGuess+ "</u> for the avocado!</h4>";
+      document.write( finalMessage+ " Thanks for playing this simple taco game, let's get some tacos! And here's a taco floating in space.");
     </script>
 
     <br><br>
