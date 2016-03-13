@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1> Test</h1>
+
+    <script type="text/javascript">
+      var sampleNumber = 3;
+      var guessIsCorrect = false;
+
+      console.log("Ask the user for a number.");
+
+      var guess = parseInt(prompt ("Pick a number between 1 and 10"));
+      if (sampleNumber == guess) {
+        guessIsCorrect = true;
+      }
+      console.log("Compare the guess number to ours.");
+      var username = prompt ("What's your name?");
+      var message = "Hello " +username+ ". You picked " +guess+ ".";
+
+      // if (guessIsCorrect) {
+      //   message += " You guess the number!";
+      // }
+      // else {
+      //   message += " You did NOT guess the number!";
+      // }
+      console.log("Build a message to show the user.");
+      message += guessIsCorrect ? "You guess the number" : "You did NOT guess the number!"
+      alert(message);
+    </script>
+
+
+  </body>
+</html>
