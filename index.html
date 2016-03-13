@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Taco Game</h1>
-    <h3>By Ivan Limongan</h3>
+    <h1>Taco Questions</h1>
+    <h3>These series of questions will let you know that I like tacos very much!</h3>
+    <h1 style="font-size:50px;">&mdash;</h1>
 
     <script type="text/javascript">
 
@@ -24,20 +25,27 @@
           alert("That's too bad, carnitas is good for your health!")
         }
 
-        console.log ("The final question for the user.");
-        var avocadoGuess = prompt("Do you like avocado on your taco or not?");
-          if (avocadoGuess === "yes") {
-            alert("Cool, you're my kind of person, let's hang out and get some tacos with avocados!")
-          }
-          else {
-            alert("That's ok, let's hang out and get some tacos and beer anyways!")
-          }
+      console.log ("The final question for the user.");
+      var avocadoGuess = prompt("Do you like avocado on your taco or not?");
+        if (avocadoGuess === "yes") {
+          alert("Cool, you're my kind of person, let's hang out and get some tacos with avocados!")
+        }
+        else {
+          alert("That's ok, let's hang out and get some tacos and beer anyways!")
+        }
 
-
-        document.write("Thanks for playing this simple taco game, let's get some tacos! <h4>Your answers are <u>" +tacoGuess+ "</u> for tacos, <u>" +meatGuess+ "</u> for the carnitas and <u>" +avocadoGuess+ "</u> for the avocado!</h4>");
-
-
+        var finalMessage = "<h4>Your answers are <u>" +tacoGuess+ "</u> for tacos, <u>" +meatGuess+ "</u> for the carnitas and <u>" +avocadoGuess+ "</u> for the avocado!</h4>";
+        document.write( finalMessage+ " Thanks for playing this simple taco game, let's get some tacos!");
     </script>
+
+    <br><br>
+    <img src="tacospace.gif">
+
+    <h1 style="font-size:50px;">&mdash;</h1>
+    &nbsp;
+    <h4>&mdash;Here's a little bit more about me, the text is from the Class 1 homework.</h4>
+    <p>My name is Ivan Limongan, I was born in Indonesia but grew up in Portland. I've been here in Portland most of my life, so I definitely feel like a Portlander. Some thing my favorite things to do is designing thing in general both in print and web design. I love food a lot and love all the foodcarts that are in town. My goal in 5 years is to visit half of all the food carts in Portland, while keeping my current weight also.  </p>
+    <p>I'm super excited to taking the Code Fellows 201 class, I really look forward to end up learing front-end development. I love the process of planning a website, going through the user experience process and developing the site. I hope to learn more JavaScript so I can make better and more cooler looking sites. Someday, I want to work in dream job at <strong>INSTRUMENT</strong> in North Portland, they make the coolest websites in the industry. </p>
 
 
   </body>
