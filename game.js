@@ -1,28 +1,37 @@
+var yesCounter = 0;
+var noCounter = 0;
+
 console.log("Ask user if they like tacos or not.");
 var tacoGuess = prompt ("Do you like tacos?");
-  if (tacoGuess === "yes") {
+  if (tacoGuess === "yes" && "YES") {
     alert("Cool, I like tacos also");
+    yesCounter += 1;
   }
-  else {
+  else if ("no" && "NO") {
     alert("That's too bad, tacos are good for you.");
+    noCounter +=1;
   }
 
 console.log ("Ask user if they want carnitas or not in their taco.");
 var meatGuess = prompt ("Let's say you do like tacos, would you like carnitas as your meat of choice?");
-  if (meatGuess === "yes") {
+  if (meatGuess === "yes" && "YES") {
     alert("Cool, carnitas is the way to go!");
+    yesCounter += 1;
   }
-  else {
+  else if ("no" && "NO"){
     alert("That's too bad, carnitas is good for your health!")
+    noCounter +=1;
   }
 
 console.log ("The final question for the user.");
 var avocadoGuess = prompt("Do you like avocado on your taco or not?");
-  if (avocadoGuess === "yes") {
+  if (avocadoGuess === "yes" && "YES") {
     alert("Cool, you're my kind of person, let's hang out and get some tacos with avocados!")
+    yesCounter += 1;
   }
-  else {
+  else if (avocadoGuess === "no" && "NO"){
     alert("That's ok, let's hang out and get some tacos and beer anyways!")
+    noCounter +=1;
   }
 
 console.log ("Asking user for their name. Final Question")
@@ -53,5 +62,5 @@ var amount = parseInt(prompt("One extra final question I promise. How many tacos
     alert("You are a champ, I can eat that much also. At least I think I can.");
   }
 
-var finalMessage = "<h4>Hello " +guessName+ ", your answers are <u>" +tacoGuess+ "</u> for tacos, <u>" +meatGuess+ "</u> for the carnitas, <u>" +avocadoGuess+ "</u> for the avocado and you can eat <u>" +amount+ "</u> tacos in one sitting. Awesome!</h4>";
+var finalMessage = "<h4>Hello " +guessName+ ", your answers are <u>" +tacoGuess+ "</u> for tacos, <u>" +meatGuess+ "</u> for the carnitas, <u>" +avocadoGuess+ "</u> for the avocado and you can eat <u>" +amount+ "</u> tacos in one sitting. Awesome! <br> And finally, you said yes: " +yesCounter+ " times and no: " +noCounter+ " times.</h4>";
 document.write( finalMessage+ " Thanks for playing this simple taco game, let's get some tacos! And here's a taco floating in space.");
