@@ -31,11 +31,11 @@ var meatGuess = prompt ("Let's say you do like tacos, would you like carnitas as
 
 console.log ("The final question for the user.");
 var avocadoGuess = prompt("Do you like avocado on your taco or not?").toLowerCase();
-  if (avocadoGuess === "yes" || avocadoGuess === "y") {
+  if (avocadoGuess === "y" || avocadoGuess === "yes") {
     alert("Cool, you're my kind of person, let's hang out and get some tacos with avocados!")
     yesCounter += 1;
   }
-  else if (avocadoGuess === "no" || avocadoGuess === "n"){
+  else if (avocadoGuess === "n" || avocadoGuess === "no"){
     alert("That's ok, let's hang out and get some tacos and beer anyways!")
     noCounter +=1;
   }
