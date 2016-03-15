@@ -2,36 +2,45 @@ var yesCounter = 0;
 var noCounter = 0;
 
 console.log("Ask user if they like tacos or not.");
-var tacoGuess = prompt ("Do you like tacos?");
-  if (tacoGuess === "yes" && "YES") {
+var tacoGuess = prompt("Do you like tacos?");
+  if (tacoGuess == "y" || tacoGuess == "Y" || tacoGuess == "yes" || tacoGuess == "YES") {
     alert("Cool, I like tacos also");
     yesCounter += 1;
   }
-  else if ("no" && "NO") {
+  else if (tacoGuess == "n" || tacoGuess =="N" || tacoGuess == "no" || tacoGuess =="NO") {
     alert("That's too bad, tacos are good for you.");
     noCounter +=1;
+  }
+  else {
+    alert("No answer");
   }
 
 console.log ("Ask user if they want carnitas or not in their taco.");
 var meatGuess = prompt ("Let's say you do like tacos, would you like carnitas as your meat of choice?");
-  if (meatGuess === "yes" && "YES") {
+  if (meatGuess === "y" || meatGuess == "Y" || meatGuess == "yes" || meatGuess == "YES") {
     alert("Cool, carnitas is the way to go!");
     yesCounter += 1;
   }
-  else if ("no" && "NO"){
+  else if (meatGuess === "n" || meatGuess == "N" || meatGuess == "no" || meatGuess == "NO"){
     alert("That's too bad, carnitas is good for your health!")
     noCounter +=1;
   }
+  else {
+    alert("No answer");
+  }
 
 console.log ("The final question for the user.");
-var avocadoGuess = prompt("Do you like avocado on your taco or not?");
-  if (avocadoGuess === "yes" && "YES") {
+var avocadoGuess = prompt("Do you like avocado on your taco or not?").toLowerCase();
+  if (avocadoGuess === "yes" || avocadoGuess === "y") {
     alert("Cool, you're my kind of person, let's hang out and get some tacos with avocados!")
     yesCounter += 1;
   }
-  else if (avocadoGuess === "no" && "NO"){
+  else if (avocadoGuess === "no" || avocadoGuess === "n"){
     alert("That's ok, let's hang out and get some tacos and beer anyways!")
     noCounter +=1;
+  }
+  else {
+    alert("No answer");
   }
 
 console.log ("Asking user for their name. Final Question")
