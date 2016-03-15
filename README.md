@@ -1,4 +1,5 @@
 Taco Game
+---------
 
 This is simple questionnaire and guessing game about me and about tacos. My code probably looks really bad but at least it works. Ha!
 
