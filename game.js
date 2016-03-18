@@ -1,6 +1,8 @@
 var yesCounter = 0;
 var noCounter = 0;
 
+// ask user aboyt tacos
+
 askQuestion("Do you like tacos?", "yes", "result1");
 askQuestion("Let's say you do like tacos, would you like carnitas as your meat of choice?", "yes", "result2");
 askQuestion("Do you like avocado on your taco or not?", "yes", "result3");
@@ -17,9 +19,11 @@ function askQuestion(question, answer, result) {
   }
 }
 
+// Report counter
 document.getElementById('yes').innerHTML = yesCounter;
 document.getElementById('no').innerHTML = noCounter;
 
+// get user name
 userName();
 console.log ("Asking user for their name. Final Question")
 function userName() {
@@ -32,5 +36,6 @@ function userName() {
   }
 }
 
+//TODO: Add this message to the site?
 // var finalMessage = "<h4>Hello " +guessName+ ", your answers are <u>" +result1+ "</u> for tacos, <u>" +meatGuess+ "</u> for the carnitas, <u>" +avocadoGuess+ "</u> for the avocado and you can eat <u>" +amount+ "</u> tacos in one sitting. Awesome! <br> And finally, you said yes: " +yesCounter+ " times and no: " +noCounter+ " times.</h4>";
 // document.write( finalMessage+ " Thanks for playing this simple taco game, let's get some tacos! And here's a taco floating in space.");
