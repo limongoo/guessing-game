@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-# guessing-game
-Paired Programming Sunday: Ivan Limongon (partner)
-  Driver: https://github.com/lagoatus/guessing-game-1
-  Navigator: https://github.com/lagoatus/guessing-game.git
-  
-=======
 Taco Game
 ---------
 
@@ -14,6 +7,13 @@ This is simple questionnaire and guessing game about me and about tacos. My code
 
 Simplified code using functions for the questionnaire.
 Output results to the webpage - took out alerts.s
+
+# guessing-game
+Paired Programming Sunday: Ivan Limongon (partner)
+  Driver: https://github.com/lagoatus/guessing-game-1
+  Navigator: https://github.com/lagoatus/guessing-game.git
+
+
 
 Author
 ------
