@@ -3,7 +3,10 @@ Taco Game
 
 This is simple questionnaire and guessing game about me and about tacos. My code probably looks really bad but at least it works. Ha!
 
+## Pair Programming with James Smith: https://github.com/JamesCSmithPDX
 
+Simplified code using functions for the questionnaire.
+Output results to the webpage - took out alerts.s
 
 Author
 ------

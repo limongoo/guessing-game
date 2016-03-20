@@ -35,7 +35,3 @@ function userName() {
       document.getElementById('name').innerHTML = "Are you a robot?";
   }
 }
-
-//TODO: Add this message to the site?
-// var finalMessage = "<h4>Hello " +guessName+ ", your answers are <u>" +result1+ "</u> for tacos, <u>" +meatGuess+ "</u> for the carnitas, <u>" +avocadoGuess+ "</u> for the avocado and you can eat <u>" +amount+ "</u> tacos in one sitting. Awesome! <br> And finally, you said yes: " +yesCounter+ " times and no: " +noCounter+ " times.</h4>";
-// document.write( finalMessage+ " Thanks for playing this simple taco game, let's get some tacos! And here's a taco floating in space.");
